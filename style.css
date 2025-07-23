@@ -1,0 +1,51 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: #001f3f;
+  color: white;
+  text-align: center;
+}
+.screen {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.hidden {
+  display: none;
+}
+
+canvas {
+  background: url('assets/bg.jpg') no-repeat center center;
+  background-size: cover;
+  border: 2px solid white;
+}
+
+#hud {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 1.2rem;
+  text-align: left;
+  z-index: 10;
+}
+
+/* 虚拟摇杆区域 */
+#joystick-zone {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  width: 150px;
+  height: 150px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+  z-index: 20;
+}
